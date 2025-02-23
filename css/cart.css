@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* Cart Styles */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cart-item-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #e63946;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.cart-actions {
+display: flex;
+justify-content: center; /* Centers the button horizontally */
+align-items: center;     /* Centers the button vertically */
+margin-top: 20px;        /* Optional: Adds some spacing above the button */
+}
+.cart-actions button {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-actions button:hover {
+    background-color: #218838;
+}
+
+/* Empty Cart */
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+}
+
+.empty-cart .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cart-table {
+        font-size: 14px;
+    }
+
+    .cart-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 20px auto;
+    }
+}

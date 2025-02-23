@@ -1,0 +1,207 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.container {
+    padding: 20px;
+}
+h2, h3 {
+    color: #2c3e50;
+}
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-block {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.product-block:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.button {
+    background: #af614c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    }
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.category {
+    background-color: #f5f7fa; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.category h2 {
+    color: #2c3e50; /* Darker color for the heading */
+    margin-bottom: 15px;
+}
+.category-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+.category-item {
+    margin: 10px; /* Space between items */
+}
+.category-item a {
+    display: block; /* Make the link a block for better click area */
+    padding: 10px 15px; /* Padding for the link */
+    background-color: #4CAF50; /* Background color for the link */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.message-box {
+    display: none; /* Initially hidden */
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+.message-box.error {
+    background-color: #f44336; /* Red background for error messages */
+}
+/* Styling for the product stock status */
+.product-block p {
+font-weight: bold;
+color: #2c3e50; /* Default color for product status text */
+margin-top: 10px;
+}
+
+/* Styling for Out of Stock */
+.product-block p.out-of-stock {
+color: #e74c3c; /* Red for out-of-stock products */
+font-size: 16px;
+background-color: #f8d7da; /* Light red background */
+padding: 5px;
+border-radius: 5px;
+text-align: center;
+}
+
+/* Styling for Critical Stock (<=2) */
+.product-block p.critical-stock {
+color: #f39c12; /* Orange for low stock */
+font-size: 16px;
+background-color: #fef2e4; /* Light orange background */
+padding: 5px;
+border-radius: 5px;
+text-align: center;
+}
+
+/* Styling for Available Stock (>2) */
+.product-block p.available-stock {
+color: #27ae60; /* Green for available products */
+font-size: 16px;
+background-color: #d4edda; /* Light green background */
+padding: 5px;
+border-radius: 5px;
+text-align: center;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    margin-left: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #f56a00;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e55b00;
+}
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Style for the support button */
+.support-button {
+    position: fixed;
+    bottom: 20px; /* Adjusts the position from the bottom */
+    right: 20px;  /* Adjusts the position from the right */
+    z-index: 1000; /* Ensures the button is always on top */
+  }
+  
+  .support-btn {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    border-radius: 50px; /* Round corners */
+    text-decoration: none; /* Removes underline */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .support-btn:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+  }
+  
